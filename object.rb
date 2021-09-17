@@ -1,4 +1,7 @@
 class Ticket
+  def price
+    puts 3500
+  end
 end
 
 ticket = Ticket.new
