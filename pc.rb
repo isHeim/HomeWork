@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class User
   def fio
     name = 'Andrey'
@@ -8,6 +10,6 @@ class User
   end
 end
 
-file = File.new("user.txt","a:UTF-8")
-file.print(u.fio + ' ' + u.profession)
+file = File.new('user.txt', 'a:UTF-8')
+file.print("#{u.fio} #{u.profession}")
 file.close
